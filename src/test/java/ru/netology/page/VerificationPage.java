@@ -4,6 +4,7 @@ import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebDriverRunner;
 
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.sleep;
 
 public class VerificationPage {
 
@@ -14,7 +15,10 @@ public class VerificationPage {
         codeField.setValue(verificationCode);
         verifyButton.click();
 
-        System.out.println("урла после verify: " + WebDriverRunner.url());
+        sleep(1000);
+
+        System.out.println("URL AFTER VERIFY: " + WebDriverRunner.url());
+        System.out.println("PAGE AFTER VERIFY: " + $("body").text());
 
         return new DashboardPage();
     }
