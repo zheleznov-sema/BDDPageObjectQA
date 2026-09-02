@@ -13,15 +13,17 @@ dependencies {
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
 
-    testImplementation 'com.codeborne:selenide:7.18.0'
+    testImplementation 'com.codeborne:selenide:6.19.1'
 
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
 test {
     useJUnitPlatform()
+
     systemProperty 'selenide.headless',
             System.getProperty('selenide.headless', 'false')
+
     systemProperty 'selenide.timeout',
             System.getProperty('selenide.timeout', '10000')
 }
