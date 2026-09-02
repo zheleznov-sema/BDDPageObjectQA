@@ -20,5 +20,8 @@ dependencies {
 
 test {
     useJUnitPlatform()
-    systemProperty 'selenide.headless', System.getProperty('selenide.headless', 'false')
+    systemProperty 'selenide.headless',
+            System.getProperty('selenide.headless', 'false')
+    systemProperty 'selenide.timeout',
+            System.getProperty('selenide.timeout', '10000')
 }
