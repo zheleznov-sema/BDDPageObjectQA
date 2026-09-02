@@ -1,10 +1,13 @@
 package ru.netology.page;
 
 import com.codeborne.selenide.ElementsCollection;
-
+import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
 import static com.codeborne.selenide.Selenide.$$;
 
 public class DashboardPage {
+    public DashboardPage() {
+        cards.shouldHave(sizeGreaterThan(0));
+    }
 
     private final ElementsCollection cards = $$(".list__item div");
     private int extractBalance(String text) {
