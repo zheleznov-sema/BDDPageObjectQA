@@ -1,1 +1,1 @@
-[![Java CI](https:/ github.com/zheleznov-sema/PatternsQA/actions/workflows/gradle.yml/badge.svg)](https://github.com/zheleznov-sema/PatternsQA/actions/workflows/gradle.yml)
+[![Java CI with Gradle](https://github.com/zheleznov-sema/BDDPageObjectQA/actions/workflows/gradle.yml/badge.svg)](https://github.com/zheleznov-sema/BDDPageObjectQA/actions/workflows/gradle.yml)
